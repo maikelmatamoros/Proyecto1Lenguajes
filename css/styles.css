@@ -1,0 +1,66 @@
+
+
+nav ul {
+    list-style: none;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+nav li {
+    display: inline-block;
+    padding: 0.1em;
+    vertical-align: top;
+}
+
+a {
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.list-group {
+    background-color:transparent;
+}
+.list-group-item {
+  background-color: dimgrey;
+  
+  
+}
+.list-group-item2 {
+  background-color: dimgrey;
+   margin-left: -15%;
+  width: 177px;
+}
+.list-group-item2:hover {
+  transform : scale(3);
+  -moz-transform : scale(2);      /* Firefox */
+  -webkit-transform : scale(2);   /* Chrome - Safari */
+   
+}
+
+
+    
+
+.backGroundContainer{
+    background-color: white;   
+}
+div#informacionRestaurante p{ 
+    font-style: oblique;
+    color: black;
+}
+div#informacionRestaurante iframe{
+    margin: 2em;
+    border-radius: 2%;
+}
+div#contacto{
+    background-color: grey;
+    margin: 2%;
+    border-radius: 0.4em;
+}
+div#map {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    background:white; 
+    margin-left:auto; 
+    margin-right:auto;
+}
+
