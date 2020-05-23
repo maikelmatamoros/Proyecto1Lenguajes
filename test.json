@@ -27,8 +27,8 @@
             "zona":"San Isidro,Heredia"
         },
         {
-            "id":"2",
-            "precio":"200000",
+            "id":"3",
+            "precio":"400000",
             "fotosAlojamiento":["img/prueba1.jpg"],
             "fotosAlrededor":["img/prueba1.jpg"],
             "nombre":"Habitacion cerca de la montaña",
@@ -40,8 +40,8 @@
             "zona":"San Isidro,Heredia"
         },
         {
-            "id":"2",
-            "precio":"200000",
+            "id":"4",
+            "precio":"900000",
             "fotosAlojamiento":["img/prueba1.jpg"],
             "fotosAlrededor":["img/prueba1.jpg"],
             "nombre":"Habitacion cerca de la montaña",
@@ -53,8 +53,8 @@
             "zona":"San Isidro,Heredia"
         },
         {
-            "id":"2",
-            "precio":"200000",
+            "id":"5",
+            "precio":"9900000",
             "fotosAlojamiento":["img/prueba1.jpg"],
             "fotosAlrededor":["img/prueba1.jpg"],
             "nombre":"Habitacion cerca de la montaña",
@@ -66,8 +66,8 @@
             "zona":"San Isidro,Heredia"
         },
         {
-            "id":"2",
-            "precio":"200000",
+            "id":"6",
+            "precio":"2100000",
             "fotosAlojamiento":["img/prueba1.jpg"],
             "fotosAlrededor":["img/prueba1.jpg"],
             "nombre":"Habitacion cerca de la montaña",
@@ -79,8 +79,8 @@
             "zona":"San Isidro,Heredia"
         },
         {
-            "id":"2",
-            "precio":"200000",
+            "id":"7",
+            "precio":"2200000",
             "fotosAlojamiento":["img/prueba1.jpg"],
             "fotosAlrededor":["img/prueba1.jpg"],
             "nombre":"Habitacion cerca de la montaña",
@@ -92,8 +92,8 @@
             "zona":"San Isidro,Heredia"
         },
         {
-            "id":"2",
-            "precio":"200000",
+            "id":"8",
+            "precio":"8200000",
             "fotosAlojamiento":["img/prueba1.jpg"],
             "fotosAlrededor":["img/prueba1.jpg"],
             "nombre":"Habitacion cerca de la montaña",
@@ -105,8 +105,8 @@
             "zona":"San Isidro,Heredia"
         },
         {
-            "id":"2",
-            "precio":"200000",
+            "id":"9",
+            "precio":"2100000",
             "fotosAlojamiento":["img/prueba1.jpg"],
             "fotosAlrededor":["img/prueba1.jpg"],
             "nombre":"Habitacion cerca de la montaña",

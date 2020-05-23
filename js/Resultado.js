@@ -1,21 +1,42 @@
 
 let objetos = new Array();
+let zonas=new Array();
 function crearObjetos() {
     objetos = test;
+    for(let i=0;i<objetos.length;i++){
+        if(!zonas.includes(objetos[i].zona)){
+            zonas.push(objetos[i].zona);
+        }
+    }
 }
+
+
 let contador = 1;
 let paginaActual = 0;
 $(document).ready(function () {
     crearObjetos();
-    cargarPagina();
+    for(let i=0;i<zonas.length;i++){
+        console.log(zonas[i]);
+        $("#select").append(
+            '<option data-tokens="ketchup mustard">'+zonas[i]+'</option>'
+        );
+    }
+    $('#select').selectpicker('refresh');
+    //cargarPagina();
 });
 
 
 
 function cargarPagina() {
-
-    for (let i = paginaActual * 5; i < contador * 5; i++) {
-        //console.log(objetos[i].nombre+"\n");
+    
+    let tope=objetos.length-(contador*5);
+    if(tope>=0){
+        tope=5;
+    }else{
+        tope=5+tope;
+    }
+    let actual=paginaActual * 5;
+    for (let i = actual; i < (actual+tope); i++) {
         $("#contenedor").append(
             '<div class="card mb-3 col-m-12" style="width:80%;">' +
             '<div class="row no-gutters">' +
@@ -36,10 +57,30 @@ function cargarPagina() {
 };
 
 
-$('#boton').on("click", function () {
-    console.log("ghjgjhgh");
+$(document).on('click','#boton', function () {
     contador++;
     paginaActual++;
-    $("#contenedor").html = "";
+    $("#contenedor").empty();
     cargarPagina();
+    if((contador*5)>(objetos.length-1)){
+        $("#boton").hide();
+    }
+    if((contador*5)>0){
+        $("#prev").show();
+    }
+
+});
+
+$(document).on('click','#prev', function () {
+    contador--;
+    paginaActual--;
+    console.log(contador*5);
+    $("#contenedor").empty();
+    cargarPagina();
+    if((contador*5)<=(objetos.length-1)){
+        $("#boton").show();
+    }
+    if((contador*5)<=5){
+        $("#prev").hide();
+    }
 });
