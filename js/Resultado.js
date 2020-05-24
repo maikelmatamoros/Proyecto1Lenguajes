@@ -1,6 +1,10 @@
 
 let objetos = new Array();
 let zonas=new Array();
+let subBusqueda=new Array();
+
+
+
 function crearObjetos() {
     objetos = test;
     for(let i=0;i<objetos.length;i++){
@@ -15,14 +19,22 @@ let contador = 1;
 let paginaActual = 0;
 $(document).ready(function () {
     crearObjetos();
+    
     for(let i=0;i<zonas.length;i++){
         console.log(zonas[i]);
         $("#select").append(
-            '<option data-tokens="ketchup mustard">'+zonas[i]+'</option>'
+            '<option data-tokens="">'+zonas[i]+'</option>'
         );
     }
     $('#select').selectpicker('refresh');
-    //cargarPagina();
+    
+
+    cargarPagina();
+
+    $('body #contenedor1').on('click', 'button', function(){
+        window.localStorage.setItem("id",$(this).attr('id'));
+        window.location.href = 'DetallesAlojamiento.html';
+      });
 });
 
 
@@ -37,7 +49,7 @@ function cargarPagina() {
     }
     let actual=paginaActual * 5;
     for (let i = actual; i < (actual+tope); i++) {
-        $("#contenedor").append(
+        $("#contenedor1").append(
             '<div class="card mb-3 col-m-12" style="width:80%;">' +
             '<div class="row no-gutters">' +
             '<div class="col-md-4">' +
@@ -48,7 +60,7 @@ function cargarPagina() {
             '<h5 class="card-title">' + objetos[i].nombre + '</h5>' +
             '<p class="card-text">Camas: ' + objetos[i].capacidad + '</p>' +
             '<p class="card-text">Precio: ' + objetos[i].precio + '</p>' +
-            '<button class="btn btn-primary">Detalles</button>' +
+            '<button class="btn btn-primary" id="'+objetos[i].id+'">Detalles</button>' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -60,7 +72,7 @@ function cargarPagina() {
 $(document).on('click','#boton', function () {
     contador++;
     paginaActual++;
-    $("#contenedor").empty();
+    $("#contenedor1").empty();
     cargarPagina();
     if((contador*5)>(objetos.length-1)){
         $("#boton").hide();
@@ -75,7 +87,7 @@ $(document).on('click','#prev', function () {
     contador--;
     paginaActual--;
     console.log(contador*5);
-    $("#contenedor").empty();
+    $("#contenedor1").empty();
     cargarPagina();
     if((contador*5)<=(objetos.length-1)){
         $("#boton").show();

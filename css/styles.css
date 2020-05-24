@@ -63,4 +63,52 @@ div#map {
     margin-left:auto; 
     margin-right:auto;
 }
+.search-field{
+    height: 30px;
+   
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+}.search-field:hover{
+   background: #ffc107;
+    cursos:pointer;
+}
+.row{
+ 
+    border: none;
+    border-radius: 25px;
+    outline: none;
+         
+   
+
+}
+.search-btn{
+    height: 50px;
+    width: 150px;
+    background: #ffeb3b;
+    border: none;
+    color: #000;
+    border-radius: 25px;
+    margin-left: auto;
+    
+    margin-right:auto;
+}
+.search-btn:hover{
+    
+    background: #ffc107;
+    cursos:pointer;
+}
+.form-box{
+    background: #26BC85;
+    padding: 30px;
+    width: 800px;
+    border-radius: 25px;
+   margin-left:auto; 
+   margin-right:auto;
+}
+.logo{
+    margin-left:50px; 
+   
+}
 

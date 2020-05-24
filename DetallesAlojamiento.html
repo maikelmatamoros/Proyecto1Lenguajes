@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /><title>Document</title>
+
+    <script type="text/javascript" src="test.json"></script>
+    <script src="js/Detalles.js"> </script>
+    <style>
+        .carousel img {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="row ">
+        <div class="col-md-8 center-block">
+            <div id="demo" class="carousel slide" data-ride="carousel" ">
+                <!-- Indicators -->
+                <ol class=" carousel-indicators" id="indicadores">
+                </ol>
+                <!-- The slideshow -->
+                <div class="carousel-inner" id="imagenes">
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 ">
+            <div class=" card justify-content-center" style="width: 100%;">
+                <div class="card-body">
+                    <div class=" row" id="infoAlquiler">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button class="btn btn-primary center-block " style="width: 100%;margin-top: 5%;"
+                                data-toggle="popover" data-content='<input type=' text'
+                                id='datepicker' />Estadia</button>
+                        </div>
+                        <div class="col-md-12 ">
+                            <button class="btn btn-primary " id="btnReserva"
+                                style="width: 50%;margin-top: 5%; margin-left: 25%;">Reservar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row" id="seccionDetalle">
+
+    </div>
+
+</body>
+
+</html>

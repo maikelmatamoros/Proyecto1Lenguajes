@@ -3,15 +3,16 @@
         {
             "id":"1",
             "precio":"100000",
-            "fotosAlojamiento":["img/prueba1.jpg"],
+            "fotosAlojamiento":["image/1A1.jpg","image/1A2.jpg","image/1A3.jpg"],
             "fotosAlrededor":["img/prueba1.jpg"],
-            "nombre":"Habitacion cerca de la playa",
+            "nombre":"Habitacion PREMIUN King deluxe",
             "capacidad": "2",
             "descripcion": "Habitacion con dos camas con vistas al mar, lugares turisticos cerca",
-            "piscina":"false",
-            "parqueo":"true",
-            "modalidad":"1",
-            "zona":"Tamarindo,Guanacaste"
+            "piscina":"No",
+            "parqueo":"Sí",
+            "modalidad":"Habitación Privada",
+            "zona":"Tamarindo,Guanacaste",
+            "noDisponible": [["2020-05-18","2020-05-20"],["2020-06-01","2020-06-05"]]
         },
         {
             "id":"2",
@@ -24,7 +25,8 @@
             "piscina":"true",
             "parqueo":"true",
             "modalidad":"2",
-            "zona":"San Isidro,Heredia"
+            "zona":"San Isidro,Heredia",
+            "noDisponible": [["2020-05-26","2020-05-28"]]
         },
         {
             "id":"3",
@@ -37,7 +39,8 @@
             "piscina":"true",
             "parqueo":"true",
             "modalidad":"2",
-            "zona":"San Isidro,Heredia"
+            "zona":"San Isidro,Heredia",
+            "noDisponible": [["2020-05-18","2020-05-20"],["2020-06-01","2020-06-05"]]
         },
         {
             "id":"4",
@@ -50,7 +53,8 @@
             "piscina":"true",
             "parqueo":"true",
             "modalidad":"2",
-            "zona":"San Isidro,Heredia"
+            "zona":"San Isidro,Heredia",
+            "noDisponible": [["2020-05-18","2020-05-20"],["2020-06-01","2020-06-05"]]
         },
         {
             "id":"5",
@@ -63,7 +67,8 @@
             "piscina":"true",
             "parqueo":"true",
             "modalidad":"2",
-            "zona":"San Isidro,Heredia"
+            "zona":"San Isidro,Heredia",
+            "noDisponible": [["2020-05-18","2020-05-20"],["2020-06-01","2020-06-05"]]
         },
         {
             "id":"6",
@@ -76,7 +81,8 @@
             "piscina":"true",
             "parqueo":"true",
             "modalidad":"2",
-            "zona":"San Isidro,Heredia"
+            "zona":"San Isidro,Heredia",
+            "noDisponible": [["2020-05-18","2020-05-20"],["2020-06-01","2020-06-05"]]
         },
         {
             "id":"7",
@@ -89,7 +95,8 @@
             "piscina":"true",
             "parqueo":"true",
             "modalidad":"2",
-            "zona":"San Isidro,Heredia"
+            "zona":"San Isidro,Heredia",
+            "noDisponible": [["2020-05-18","2020-05-20"],["2020-06-01","2020-06-05"]]
         },
         {
             "id":"8",
@@ -102,7 +109,8 @@
             "piscina":"true",
             "parqueo":"true",
             "modalidad":"2",
-            "zona":"San Isidro,Heredia"
+            "zona":"San Isidro,Heredia",
+            "noDisponible": [["2020-05-18","2020-05-20"],["2020-06-01","2020-06-05"]]
         },
         {
             "id":"9",
@@ -115,6 +123,7 @@
             "piscina":"true",
             "parqueo":"true",
             "modalidad":"2",
-            "zona":"San Isidro,Heredia"
+            "zona":"San Isidro,Heredia",
+            "noDisponible": [["2020-05-18","2020-05-20"],["2020-06-01","2020-06-05"]]
         }
     ]

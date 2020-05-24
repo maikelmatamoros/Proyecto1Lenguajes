@@ -1,126 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
-        <title>Proyecto I Lenguajes </title>
-        <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link href="css/styles.css" type="text/css" rel="stylesheet">
-        <script src="JS/cartScript.js" type="text/javascript"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="public/js/jquery-1.11.1.min.js"></script>
-        <script type="text/javascript" src="public/js/hover_pack.js"></script>
-        <script type="text/javascript" src="public/js/megamenu.js"></script>
+    <script type="text/javascript" src="test.json"></script>
+    <script src="js/Inicial.js"> </script>
 
-    </head>
+</head>
 
-    <body >
-        <header>
-            <div class="row">
-                <div class="col-sm-4">
-                    <h1>
-                        <a href="PrincipalPage.html">
-                            <img alt="logo sitio"  src="logo1.png" width="100" height="100" margin-left=50 >
-                            </img>
-                        </a>
-                    </h1>
-                </div>
-                <div class="col-sm-6">
-                    <nav>
-                        <ul class="nav navbar-nav navbar-center">
-                            <li>
-                                <a href="#carousel-indicators" >
-                                    Restaurantes
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#productsPromo">
-                                    Promociones
-                                </a>
-                            </li>
+<body>
+    <header>
+        <div class="row" background-image="linear">
 
-                            <li>
-                                <a href="#contacto">
-                                    Contacto
-                                </a>
-                            </li>
+            <img src="image/fondo2.jpg" alt="Los Angeles" width="1400" height="500">
+            <h1 class="logo">
+                <a href="PrincipalPage.html">
+                    <img alt="logo sitio" src="logo1.png" width="100" height="100" margin-left=50>
 
-                        </ul>
-                    </nav>
-                </div>
-
-
-            </div>
+                </a>
+            </h1>
         </div>
+
     </header>
 
-    <div id="demo" class="carousel slide" data-ride="carousel">
 
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
+    <div class="row justify-content-center">
+        <div class="card text-center">
+            <div class="card-header">Busca Tu Alojamiento</div>
+            <div class="card-body">
+                <div class="form-group" style="margin: auto;">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <label for="usr">Zona:</label>
+                            <select class="selectpicker" data-live-search="true" id="select">
+                        </select>
+                        </div>
+                        <div class=" col-md-6">
+                                <label for="usr">Cantidad de personas:</label>
+                                <input type="number" class="form-control" id="Cantidad">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-md-6">
+                            <label for="usr">Precio Minimo:</label>
+                            <input type="number" class="form-control" id="precioMinimo">
+                    </div>
+                    <div class=" col-md-6">
+                        <label for="usr">Precio Máximo:</label>
+                        <input type="number" class="form-control" id="precioMaximo">
+                </div>
+                </div>
+                    <div class="row" style="margin-top: 2%;">
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Parqueo
+                                </label>
+                            </div>
 
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="image/fondo2.jpg" alt="Los Angeles"width="1300" height="500">
-                <div class="carousel-caption">
-                    <h3>Volcan Arenal</h3>
-                    <p>Hoteles cerca del Volcan Arenal</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="image/fondo2.jpg" alt="Chicago"width="1300" height="500">
-                <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>We had such a great time in LA!</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="image/fondo2.jpg" alt="New York"width="1300" height="500">
-                <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>We had such a great time in LA!</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Piscina
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button class="btn btn-info center-block " style="width: 100%;margin-top: 5%;"
+                                data-toggle="popover" data-content='<input type=' text' id='picker' />Rango de fechas</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button class="btn btn-primary center-block " id="buscar" style="width: 100%;margin-top: 5%;">
+                                Buscar
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-
     </div>
 
-    <div class="alo">
-        <h3></h3>
-        <p></p>
-    </div>
-    <input size="16" type="text" class="form-control" id="datetime" readonly>
-    <script type="text/javascript">
-        $("#datetime").datetimepicker({
-            format: 'yyyy-mm-dd hh:ii',
-            autoclose: true
-        });
-    </script>
+
+
+
     <div class="mejores">
-        <h3 >MEJORES HOTELES </h3>
+        <h3>MEJORES HOTELES </h3>
         <p></p>
     </div>
     <div id="carousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
@@ -152,24 +141,24 @@
                 <figure class="col-md-4 d-md-inline-block">
 
                     <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg"
-                         class="img-fluid">
+                        class="img-fluid">
 
                     </a>
                 </figure>
 
                 <figure class="col-md-4 d-md-inline-block">
                     <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(4).jpg"
-                       data-size="1600x1067">
+                        data-size="1600x1067">
                         <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(4).jpg"
-                             class="img-fluid">
+                            class="img-fluid">
                     </a>
                 </figure>
 
                 <figure class="col-md-4 d-md-inline-block">
                     <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(6).jpg"
-                       data-size="1600x1067">
+                        data-size="1600x1067">
                         <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(6).jpg"
-                             class="img-fluid">
+                            class="img-fluid">
                     </a>
                 </figure>
 
@@ -185,23 +174,23 @@
 
                 <figure class="col-md-4 d-md-inline-block">
                     <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(31).jpg"
-                       data-size="1600x1067">
+                        data-size="1600x1067">
                         <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(31).jpg"
-                             class="img-fluid">
+                            class="img-fluid">
                     </a>
                 </figure>
                 <figure class="col-md-4 d-md-inline-block">
                     <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg"
-                       data-size="1600x1067">
+                        data-size="1600x1067">
                         <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg"
-                             class="img-fluid">
+                            class="img-fluid">
                     </a>
                 </figure>
                 <figure class="col-md-4 d-md-inline-block">
                     <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(33).jpg"
-                       data-size="1600x1067">
+                        data-size="1600x1067">
                         <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(33).jpg"
-                             class="img-fluid">
+                            class="img-fluid">
                     </a>
                 </figure>
 
@@ -216,23 +205,23 @@
 
                 <figure class="col-md-4 d-md-inline-block">
                     <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
-                       data-size="1600x1067">
+                        data-size="1600x1067">
                         <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
-                             class="img-fluid">
+                            class="img-fluid">
                     </a>
                 </figure>
                 <figure class="col-md-4 d-md-inline-block">
                     <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(56).jpg"
-                       data-size="1600x1067">
+                        data-size="1600x1067">
                         <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(56).jpg"
-                             class="img-fluid">
+                            class="img-fluid">
                     </a>
                 </figure>
                 <figure class="col-md-4 d-md-inline-block">
                     <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(77).jpg"
-                       data-size="1600x1067">
+                        data-size="1600x1067">
                         <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(77).jpg"
-                             class="img-fluid">
+                            class="img-fluid">
                     </a>
                 </figure>
 
@@ -243,121 +232,127 @@
         <!--/.Slides-->
 
     </div>
- <div class="mejores">
-        <h3 >MEJORES HOTELES </h3>
+    <div class="mejores">
+        <h3>MEJORES HOTELES </h3>
         <p></p>
     </div>
     <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
 
-  <!--Controls-->
-  <div class="controls-top">
-    <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
-        class="fas fa-chevron-left"></i></a>
-    <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
-        class="fas fa-chevron-right"></i></a>
-  </div>
-  <!--/.Controls-->
-
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-multi" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-multi" data-slide-to="1"></li>
-    <li data-target="#carousel-example-multi" data-slide-to="2"></li>
-
-  </ol>
-  <!--/.Indicators-->
-
-  <div class="carousel-inner v-2" role="listbox">
-
-    <div class="carousel-item active">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
+        <!--Controls-->
+        <div class="controls-top">
+            <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
+                    class="fas fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
+                    class="fas fa-chevron-right"></i></a>
         </div>
-      </div>
-    </div>
-    <div class="carousel-item active">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item active">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div class="carousel-inner v-2" role="listbox">
-    <div class="carousel-item">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="col-12 col-md-4">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (27).jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-            <a class="btn btn-primary btn-md btn-rounded">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
+        <!--/.Controls-->
 
-  </div>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-multi" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-multi" data-slide-to="1"></li>
+            <li data-target="#carousel-example-multi" data-slide-to="2"></li>
 
-</div>
+        </ol>
+        <!--/.Indicators-->
+
+        <div class="carousel-inner v-2" role="listbox">
+
+            <div class="carousel-item active">
+                <div class="col-12 col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <div class="col-12 col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <div class="col-12 col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-inner v-2" role="listbox">
+                <div class="carousel-item">
+                    <div class="col-12 col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title font-weight-bold">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-12 col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title font-weight-bold">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-12 col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (27).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title font-weight-bold">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary btn-md btn-rounded">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 </body>
 <footer>
     <div id="contacto" class="container-fluid background-grey">
@@ -370,4 +365,5 @@
     </div>
     S
 </footer>
+
 </html>
