@@ -76,7 +76,6 @@ $(document).ready(function () {
         fecha1 = start.format('YYYY-MM-DD');
         fecha2 = end.format('YYYY-MM-DD');
 
-        //console.log(, ' dias de diferencia');
     });
 
 });
